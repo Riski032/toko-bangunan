@@ -1,1 +1,336 @@
 
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BuildMaster 3D - Pusat Alat Bangunan Modern</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec6a13",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221710",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+        .depth-card {
+            box-shadow: 0 10px 25px -5px rgba(236, 106, 19, 0.1), 0 8px 10px -6px rgba(236, 106, 19, 0.1);
+        }
+        .depth-button {
+            box-shadow: 0 4px 0 0 #bd550f;
+            transition: all 0.1s ease;
+        }
+        .depth-button:active {
+            box-shadow: 0 1px 0 0 #bd550f;
+            transform: translateY(3px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 glass-effect border-b border-primary/10 px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">construction</span>
+<h1 class="text-xl font-black tracking-tight text-slate-900">BuildMaster <span class="text-primary">3D</span></h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Beranda</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#produk">Produk</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#tentang">Tentang Kami</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#lokasi">Lokasi</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#kontak">Kontak</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
+<input class="pl-10 pr-4 py-2 bg-slate-100 border-none rounded-lg text-sm focus:ring-2 focus:ring-primary/50 w-48 lg:w-64" placeholder="Cari alat..." type="text"/>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm depth-button uppercase tracking-wide">
+                    Masuk
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-12 pb-20 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm">verified</span> Inovasi Konstruksi 2024
+                    </div>
+<h2 class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900">
+                        Pusat Alat Bangunan <span class="text-primary">Modern</span> &amp; Terlengkap
+                    </h2>
+<p class="text-lg text-slate-600 leading-relaxed max-w-xl">
+                        Menyediakan kebutuhan konstruksi berkualitas tinggi dengan sentuhan teknologi modern untuk hasil bangunan yang lebih presisi dan tahan lama.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-extrabold text-lg depth-button flex items-center gap-2">
+                            Lihat Produk <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white border-2 border-slate-200 text-slate-700 px-8 py-4 rounded-xl font-extrabold text-lg hover:border-primary/30 transition-all">
+                            Konsultasi Ahli
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl opacity-50"></div>
+<img alt="3D Industrial Building Tools" class="w-full h-auto rounded-3xl depth-card object-cover aspect-[4/3]" data-alt="Modern 3D industrial tools and construction machinery visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaUSfG0EQsfIf8F59xuMlI9MxiZV-pPseFWO6xTNE9WWr-t1r5HKj_aGFu8vU3A3lPYsRIGr2cKej2mSbDsWjlbuQkQpH1nHGjVI-9Z3vP1lpykPGou3jLwwMPz_J161jYaQK9-pHE-Tu39bWIKN8mbVxGgKmrI2SwGzNCBDwnrIYRcxM-d6ECUcBd8pf861RdDun4H4b2Kqo3qeiTWRO0kOgtCpm8qmlTmTDpvCnZ7UPZc4246mDzIS5tbhUXsaj7NpJgxlAuSbE"/>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-24 bg-slate-50" id="tentang">
+<div class="max-w-7xl mx-auto px-6 lg:px-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 relative">
+<img alt="Modern Hardware Store" class="rounded-3xl shadow-2xl grayscale-[20%] hover:grayscale-0 transition-all duration-500" data-alt="Interior of a clean modern building supply store" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUoD-FNoXeL36hyTFY9dGJrGUZk-ICgU2DmstZ_WH00ItKvg4bPQUUnj60j_ttlcTHtTpPngnvMNee_M845apfEeqN0hXL8P3eQw5o5jM1WukNJotdoYha59LH7QeST8fuHkSZrgBll3xfg9XdLpVZ6Axx7DP_6uAJBvoXPypByc2K6aQ_WVFr_SoKH8xr2RyXks3vSWrUdpYyyyCQxqjhXeyZf8To3QovSuhMqyMbHUFLG27VNkr8yDv8T4c13fSNoOtLGUI-EBY"/>
+<div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
+<p class="text-4xl font-black text-primary">25+</p>
+<p class="text-sm font-bold text-slate-500 uppercase tracking-tighter">Tahun Pengalaman</p>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-6">
+<h3 class="text-primary font-bold uppercase tracking-widest text-sm">Tentang Kami</h3>
+<h2 class="text-4xl font-black text-slate-900 leading-tight">Keandalan dalam Setiap Pondasi Bangunan</h2>
+<p class="text-slate-600 leading-relaxed text-lg">
+                            BuildMaster 3D bukan sekadar toko bangunan biasa. Kami adalah mitra terpercaya bagi para kontraktor, arsitek, dan pemilik rumah yang mengutamakan kualitas. Dengan pengalaman lebih dari dua dekade, kami mengkurasi alat dan bahan bangunan terbaik dari seluruh dunia.
+                        </p>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg h-fit">verified_user</span>
+<div>
+<h4 class="font-bold text-slate-900">Garansi Kualitas</h4>
+<p class="text-sm text-slate-500">Semua produk bersertifikat SNI &amp; Internasional.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg h-fit">local_shipping</span>
+<div>
+<h4 class="font-bold text-slate-900">Pengiriman Cepat</h4>
+<p class="text-sm text-slate-500">Logistik mandiri untuk keamanan barang.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-24 px-6 lg:px-20" id="produk">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h3 class="text-primary font-bold uppercase tracking-widest text-sm mb-2">Katalog Pilihan</h3>
+<h2 class="text-4xl font-black text-slate-900">Produk Unggulan Kami</h2>
+</div>
+<a class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                        Lihat Semua Produk <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition-all group">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img alt="Modern Drill" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional cordless modern power drill on workbench" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5fT_29n1kwa9tEh7M_KlDAQWwCfMIjsJEa7juM_qpNX6j4jchretMytaSo4xQ_rDqVUQtHas5Vjp-MLTVDO5Y1zr8VUgVYzC_vkcYgy_Ja4as7VUkI20BVQE2DcGixuS9NxFtvCQtCchFRnluLrhioY8C48Wf5AwpYbZmK3YTEObkSiIb52gATqApNf-ncprziXMlZ3xYg3wb2VXM07I6yjB4FaLLNx-Igvwnl2n3jInfKV_KC3lNKaOWI9JEpD2Rhh3lO3KbMLo"/>
+<div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-black px-2 py-1 rounded-md uppercase">Terlaris</div>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h4 class="font-bold text-slate-900 group-hover:text-primary transition-colors">Mesin Bor Modern X-1</h4>
+<p class="text-xs text-slate-400">Power Tools &amp; Drills</p>
+</div>
+<p class="text-xl font-black text-slate-900">Rp 1.250.000</p>
+<button class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-primary transition-colors depth-button">
+<span class="material-symbols-outlined text-lg">shopping_cart</span> Tambah
+                            </button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition-all group">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img alt="Premium Cement" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Bags of premium instant cement for construction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKu4V6Rre5kOkB_-_4BJyCuuLMJwCvEyq8rpWc5NO-Jb4ee1D8xl1ye6oKr6lOS-wSXcIPTOWdBi2nn8r2GV1OgcOoMTzCX5xDkjZmoDsn5E3bqdtaQkNxWJSgrpq3CQVaA4A7ScfYmq3PSN-o7V6zXgxZqHD3tKmH8_7M-w5oLebgLr9Ml5T3ux0F12YOYVPGKQPcZCL0NOuMATUIfT2HTxTDPh082XJscaymwDXEFGeYAQrXpD3CcCHLoRpoq9au0l0QxSeFDC0"/>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h4 class="font-bold text-slate-900 group-hover:text-primary transition-colors">Semen Instan Premium</h4>
+<p class="text-xs text-slate-400">Material Dasar</p>
+</div>
+<p class="text-xl font-black text-slate-900">Rp 65.000</p>
+<button class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-primary transition-colors depth-button">
+<span class="material-symbols-outlined text-lg">shopping_cart</span> Tambah
+                            </button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition-all group">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img alt="Exterior Paint" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Bucket of professional exterior wall paint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCddkZmZmrU1VQ1hnH7X4SESGp3sl0sI6yo7StjffbeaahYcG5HgzItOBs0qHyuElSnP6XWFSPGNZkG1v8cG6C7HQyqsDVuH6CU_rBUC3aSoMWBOK6YHzcoDeKAlbkrVhwlPmojFkNz8X572EcgQHWoaS_ps0ri_oWTnjerpEHf10YeCLMfkFeMcHPRQJdFUXjdPRt8NEUUJ-7185cwmjfz3gsS4aY6bBdYKVAwQOvIPqAFb_VQWPCDN08awhA7AR6GE3GwMWQJM8k"/>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h4 class="font-bold text-slate-900 group-hover:text-primary transition-colors">Cat Dinding Eksterior</h4>
+<p class="text-xs text-slate-400">Finishing &amp; Cat</p>
+</div>
+<p class="text-xl font-black text-slate-900">Rp 210.000</p>
+<button class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-primary transition-colors depth-button">
+<span class="material-symbols-outlined text-lg">shopping_cart</span> Tambah
+                            </button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition-all group">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img alt="Power Tools Set" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Comprehensive toolkit with various professional power tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvCgftn8Lpp6--5tQNkPHWvpDxTPsmbRjAdm-Tj6M9KExbNg_gBG0ENCyc34qGnR4IGqqhTStJtHvUmAdaygakN4t6xF9K3BArrZtu2kLrY1Aa3qXLknoN0mtp3zcrEieJDmu1bnS1zGsniU6ngjMiAWw3FDYCMJVxhqsd-K9LJ_45AQFBSmp_aMzwXEQ2hddgO0KvtBwJTvcgExKv4n2otlIC_Azwo8csHm5Ik828g3RXqrbZ1QX_IST1SNyKpf_3G-VXT32LqWs"/>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h4 class="font-bold text-slate-900 group-hover:text-primary transition-colors">Power Tools Set Pro</h4>
+<p class="text-xs text-slate-400">Bundle Kits</p>
+</div>
+<p class="text-xl font-black text-slate-900">Rp 3.500.000</p>
+<button class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-primary transition-colors depth-button">
+<span class="material-symbols-outlined text-lg">shopping_cart</span> Tambah
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-24 bg-slate-900 text-white overflow-hidden" id="lokasi">
+<div class="max-w-7xl mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h3 class="text-primary font-bold uppercase tracking-widest text-sm">Kunjungi Toko</h3>
+<h2 class="text-4xl font-black leading-tight">Temukan Kami di Pusat Kota</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary bg-primary/20 p-3 rounded-xl">location_on</span>
+<div>
+<p class="font-bold text-lg">Alamat Utama</p>
+<p class="text-slate-400">Jl. Industri Modern No. 88, Kawasan Tekno, Jakarta Selatan, 12345</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary bg-primary/20 p-3 rounded-xl">schedule</span>
+<div>
+<p class="font-bold text-lg">Jam Operasional</p>
+<p class="text-slate-400">Senin - Sabtu: 08.00 - 17.00 WIB<br/>Minggu: 09.00 - 15.00 WIB</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold depth-button flex items-center gap-2">
+<span class="material-symbols-outlined">directions</span> Buka Google Maps
+                    </button>
+</div>
+<div class="h-[400px] lg:h-[500px] rounded-3xl overflow-hidden border-4 border-slate-800 shadow-2xl relative grayscale contrast-125">
+<!-- Placeholder for Map -->
+<div class="w-full h-full bg-slate-800 flex items-center justify-center bg-center bg-cover" data-alt="Stylized dark mode map showing store location in Jakarta" data-location="Jakarta" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJ34qYn3rMiZaceP6bLWF1rTCwGUcR2ZjDhwi38imzg-UsZkU7ptMrXbNPzcNVREs5M1TG-mABilbNu9BM0YlarJHG0q3hFMVnd6LSlb3LoonZ20-rE0ERVkQiLCX90M_fowLNBBnIQ25ofJCws8AimQXTQKPUVEEmEJwURI7or9NkVeOkM4Jdb9yZIFcrA-lLVouItH3ty6XLzwfarSvPGWOIcLSyzjrWDN8woiHkKTpBDB_sBXqn2CLfJTG6UhRO8ZvlIRc29oA')">
+<div class="absolute inset-0 bg-slate-900/40"></div>
+<div class="relative bg-primary p-4 rounded-full animate-bounce shadow-[0_0_20px_rgba(236,106,19,0.5)]">
+<span class="material-symbols-outlined text-white text-3xl">home_pin</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Us Section -->
+<section class="py-24 px-6 lg:px-20" id="kontak">
+<div class="max-w-7xl mx-auto">
+<div class="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 border border-slate-100">
+<div class="lg:col-span-2 bg-primary p-12 lg:p-16 text-white space-y-10">
+<h2 class="text-4xl font-black">Hubungi Kami</h2>
+<p class="text-primary-foreground/80 leading-relaxed font-medium">Ada pertanyaan mengenai stok barang atau butuh penawaran proyek skala besar? Tim kami siap membantu Anda.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 group" href="#">
+<div class="bg-white/20 p-3 rounded-lg group-hover:bg-white/30 transition-colors">
+<span class="material-symbols-outlined">call</span>
+</div>
+<span class="font-bold text-lg">+62 21 5555 1234</span>
+</a>
+<a class="flex items-center gap-4 group" href="#">
+<div class="bg-white/20 p-3 rounded-lg group-hover:bg-white/30 transition-colors">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="font-bold text-lg">info@buildmaster3d.com</span>
+</a>
+<a class="flex items-center gap-4 group" href="#">
+<div class="bg-white/20 p-3 rounded-lg group-hover:bg-white/30 transition-colors">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<span class="font-bold text-lg">WhatsApp Sales (24/7)</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-3 p-12 lg:p-16 space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700">Nama Lengkap</label>
+<input class="w-full px-4 py-3 rounded-xl border-slate-200 focus:border-primary focus:ring-primary" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700">Email</label>
+<input class="w-full px-4 py-3 rounded-xl border-slate-200 focus:border-primary focus:ring-primary" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700">Subjek</label>
+<select class="w-full px-4 py-3 rounded-xl border-slate-200 focus:border-primary focus:ring-primary">
+<option>Informasi Produk</option>
+<option>Penawaran Proyek</option>
+<option>Keluhan Pelanggan</option>
+<option>Lainnya</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700">Pesan</label>
+<textarea class="w-full px-4 py-3 rounded-xl border-slate-200 focus:border-primary focus:ring-primary" placeholder="Tuliskan pesan Anda..." rows="4"></textarea>
+</div>
+<button class="bg-primary text-white w-full py-4 rounded-xl font-black text-lg depth-button">Kirim Pesan</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200 pt-20 pb-10 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto space-y-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">construction</span>
+<h2 class="text-xl font-black tracking-tight text-slate-900">BuildMaster <span class="text-primary">3D</span></h2>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">
+                        Solusi satu pintu untuk alat bangunan modern dan bahan konstruksi bermutu tinggi di Indonesia.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span 
